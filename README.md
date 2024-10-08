@@ -22,7 +22,7 @@ PyCharm - воспроизведение автотестов.
 
 Для подготовки к запуску автотестов необходимо установить необходимые библиотеки PyCharm с помощью вводимой команды в консоли терминала:
 
-   pip install -r requirements.txt
+       pip install -r requirements.txt
    
 Также необходимо скачать актуальную версию драйвера для вашего браузера для успешного прохождения автотестов.
 
@@ -30,10 +30,10 @@ PyCharm - воспроизведение автотестов.
 
 Для запуска всех тестов:
 
-python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k TestsScenarios
+       python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k TestsScenarios
 
 В моём случае была например команда:
 
-python -m pytest -v --driver Chrome --driver-path C:\Chrome-selenium\chromedriver.exe tests\tests.py -k TestsScenarios
+       python -m pytest -v --driver Chrome --driver-path C:\Chrome-selenium\chromedriver.exe tests\tests.py -k TestsScenarios
 
 Окружение: Google Chrome Версия 129, Windows 11 Home (64 бит)
