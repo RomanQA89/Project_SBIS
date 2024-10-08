@@ -28,12 +28,24 @@
 
 Для запуска автотестов необходимо вводить команды в консоли терминала.
 
-Для запуска всех тестов:
+Для запуска всех тестовых сценариев:
 
        python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k TestsScenarios
 
 В моём случае была например команда:
 
        python -m pytest -v --driver Chrome --driver-path C:\Chrome-selenium\chromedriver.exe tests\tests.py -k TestsScenarios
+
+Для запуска теста 1-го сценария:
+
+       python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k test_first_scenario
+
+Для запуска теста 2-го сценария:
+
+       python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k test_second_scenario
+
+Для запуска теста 3-го сценария:
+
+       python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k test_third_scenario
 
 Окружение: Google Chrome Версия 129, Windows 11 Home (64 бит)
