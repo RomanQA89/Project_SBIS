@@ -66,4 +66,4 @@
        python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k third_scenario
 
 
-Окружение: Google Chrome Версия 129, Windows 11 Home (64 бит)
+Окружение: Google Chrome Версия 129, Windows 11 Home (64 бит), Python 3.11
