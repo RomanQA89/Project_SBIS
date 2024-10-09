@@ -26,7 +26,7 @@
    
 Также необходимо скачать актуальную версию драйвера для вашего браузера для успешного прохождения автотестов.
 
-Для запуска автотестов необходимо вводить команды в консоли терминала.
+Для запуска автотестов необходимо вводить команды в консоли терминала и указывать путь к веб-драйверу, например --driver-path C:\Chrome-selenium\chromedriver.exe
 
 Для запуска всех тестовых сценариев:
 
@@ -47,5 +47,15 @@
 Для запуска теста 3-го сценария:
 
        python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k test_third_scenario
+
+
+Автотесты также можно запускать с помощью фикстур pytest для всех 3-х сценариев:
+
+       python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k first_scenario
+
+       python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k second_scenario
+
+       python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k third_scenario
+
 
 Окружение: Google Chrome Версия 129, Windows 11 Home (64 бит)
