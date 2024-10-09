@@ -51,9 +51,15 @@
 
 Автотесты также можно запускать с помощью фикстур pytest для всех 3-х сценариев:
 
+Первый сценарий:
+
        python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k first_scenario
+       
+Второй сценарий:
 
        python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k second_scenario
+
+Третий сценарий:
 
        python -m pytest -v --driver Chrome --driver-path <chromedriver_directory>\<chromedriver_file> tests\tests.py -k third_scenario
 
