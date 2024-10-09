@@ -123,6 +123,7 @@ class TestsScenarios:
         assert "Камчатский край" in web_browser.title,\
             f"title вкладки не содержит 'Камчатский край'. Текущий title: {web_browser.title}"
 
+    @pytest.mark.third_scenario
     def test_third_scenario(self, web_browser):
         """Проверка третьего сценария."""
 
